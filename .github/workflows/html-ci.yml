@@ -3,8 +3,6 @@ name: HTML Resume CI
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -12,17 +10,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Check HTML file exists
+      - name: List repo files (debug)
+        run: ls -la
+
+      - name: Check resume file
         run: |
-          if [ -f index.html ]; then
-            echo "✅ Resume HTML found"
+          if [ -f Resume.html ]; then
+            echo "✅ Resume.html found"
           else
-            echo "❌ index.html not found"
+            echo "❌ index.html NOT found"
             exit 1
           fi
-
-      - name: CI completed
-        run: echo "🎉 Resume CI pipeline ran successfully!"

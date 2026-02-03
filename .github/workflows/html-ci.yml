@@ -17,8 +17,8 @@ jobs:
 
       - name: Check resume file
         run: |
-          if [ -f Resume.html ]; then
-            echo "✅ Resume.html found"
+          if [ -f index.html ]; then
+            echo "✅ index.html found"
           else
             echo "❌ index.html NOT found"
             exit 1

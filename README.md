@@ -46,7 +46,7 @@ The workflow is defined inside:
 
 .github/workflows/html-ci.yml
 
-## 🔄 Trigger
+### 🔄 Trigger
 
 ```yaml
 on:
@@ -54,28 +54,23 @@ on:
     branches:
       - main
 This means whenever new code is pushed to the main branch, the pipeline runs automatically.
-
----
-
-## 🔁 CI/CD Process Flow
+________________________________________
+🔁 CI/CD Process Flow
 1️⃣ Developer pushes code to GitHub
 2️⃣ GitHub Actions triggers automatically
 3️⃣ Workflow executes defined steps
 4️⃣ Website is built/deployed
-
----
-
-## 🚀 What This Project Demonstrates
+________________________________________
+🚀 What This Project Demonstrates
 •	Continuous Integration using GitHub Actions
 •	Workflow automation using YAML
 •	Trigger-based deployment
 •	Basic CI/CD implementation for static web apps
-
----
-
-## 🎯 Learning Outcome
+________________________________________
+🎯 Learning Outcome
 By completing this task, I learned:
 •	How CI/CD pipelines work
 •	How to write GitHub Actions workflow files
 •	How automation is triggered on push events
 •	How modern DevOps practices improve deployment process
+________________________________________
